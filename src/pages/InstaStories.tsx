@@ -73,7 +73,7 @@ const InstaStories = () => {
       <section className=" ">
         {typeof activeIndex === "number" && activeIndex !== undefined && (
           <div className="max-w-[1080px] w-full">
-            <ProgressBar value={progress} max={100} />
+            <ProgressBar animated value={progress} max={100} />
             <img
               src={(data[activeIndex as number].image as string) ?? ""}
               alt=""
