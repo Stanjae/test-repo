@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { PlusCircle, XCircleIcon } from "lucide-react";
 import useHandleInstaStories from "../hooks/useHandleInstaStories";
 import { useEffect, useState } from "react";
@@ -70,7 +71,7 @@ const InstaStories = () => {
         ))}
       </div>
 
-      <section className=" ">
+      <section className=" w-full bg-white">
         {typeof activeIndex === "number" && activeIndex !== undefined && (
           <div className="max-w-[1080px] w-full">
             <ProgressBar value={progress} max={100} />
