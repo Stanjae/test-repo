@@ -71,3 +71,5 @@ export default defineConfig([
   },
 ])
 ```
+
+#How to undo a commit with git checkout
