@@ -25,15 +25,15 @@ const InstaStories = () => {
               setActiveIndex(undefined);
             } else {
               setActiveIndex(activeIndex + 1);
+            }
+            const fixatedData = data.map((item, index) => {
+              if (index == activeIndex) {
+                return { ...item, isViewed: true };
               }
-              const fixatedData = data.map((item, index) => {
-                if (index == activeIndex) {
-                  return { ...item, isViewed: true };
-                }
-                return item;
-              })
-              setData(fixatedData);
-              localStorage.setItem("insta-stories", JSON.stringify(fixatedData));
+              return item;
+            });
+            setData(fixatedData);
+            localStorage.setItem("insta-stories", JSON.stringify(fixatedData));
             return 0;
           } else {
             return prev + 25;
@@ -65,8 +65,13 @@ const InstaStories = () => {
               onClick={() => handleViewImage(index)}
               src={item.image}
               alt={item.name}
-                />
-                <button onClick={() => deleteImage(item.id)}  className="absolute -top-1 -right-1"><XCircleIcon fill="red" size={18} /></button>
+            />
+            <button
+              onClick={() => deleteImage(item.id)}
+              className="absolute -top-1 -right-1"
+            >
+              <XCircleIcon fill="red" size={18} />
+            </button>
           </div>
         ))}
       </div>
@@ -82,11 +87,11 @@ const InstaStories = () => {
             />
           </div>
         )}
-          </section>
-          
-          <div>
-              <p>Testing Undo Changes</p>
-          </div>
+      </section>
+
+      <div>
+        <p>Testing Undo Changes</p>
+      </div>
     </main>
   );
 };
