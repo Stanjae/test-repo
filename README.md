@@ -76,3 +76,9 @@ export default defineConfig([
 #HEAD is now at 820ffa8 Reapply "How to undo a public commit with git revert -- new test 01
 
 ____________________________________________________________________________________________________
+
+#Test 03
+#Turn off this advice by setting config variable advice.detachedHead to false
+#HEAD is now at 820ffa8 Reapply "How to undo a public commit with git revert -- new test 03
+
+____________________________________________________________________________________________________
