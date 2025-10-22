@@ -82,7 +82,11 @@ const InstaStories = () => {
             />
           </div>
         )}
-      </section>
+          </section>
+          
+          <div>
+              <p>Testing Undo Changes</p>
+          </div>
     </main>
   );
 };
