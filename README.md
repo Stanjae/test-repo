@@ -89,3 +89,9 @@ ________________________________________________________________________________
 #HEAD is now at 820ffa8 Reapply "How to undo a public commit with git revert -- new test 06
 
 ____________________________________________________________________________________________________
+
+#Test 07
+#Turn off this advice by setting config variable advice.detachedHead to false
+#HEAD is now at 820ffa8 Reapply "How to undo a public commit with git revert -- new test 7
+
+____________________________________________________________________________________________________
