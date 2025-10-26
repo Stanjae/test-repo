@@ -15,5 +15,6 @@ export default function Tetris() {
     <p>Sword -widows wail</p>
         <h2>Dire wolf</h2>
         <p>From the north, they come</p>
+        <p> To the south, they go</p>
     </div>;
 }
